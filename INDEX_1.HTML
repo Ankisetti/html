@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            background-color: pink;
+        }
+
+        @media screen and (min-width: 680px) {
+            body {
+                background-color: lightgreen;
+            }
+
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 300px;
+            background-color: #f1f1f1;
+            border: 1px solid #555;
+            
+
+        }
+
+        li a {
+            display: block;
+            color: #000;
+            padding: 30px 90px;
+            text-decoration: none;
+            
+        }
+
+        li {
+            text-align: center;
+            border-bottom: 1px solid #555;
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
+
+        li a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #555;
+            color: white;
+        }
+
+        H2 {
+            text-align: center;
+            color: orangered;
+            background-color: peachpuff;
+            width: 550px;
+            padding: 3px;
+            text-align: center;
+            position: relative;
+            left: 600px;
+            bottom: 700px;
+            right: 70px;
+        }
+
+        p {
+            position: relative;
+            left: 400px;
+            bottom: 700px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            position: relative;
+            left: 380px;
+            bottom: 700px;
+            right: 500px;
+        }
+
+        div.ex1 {
+            background-color: lightblue;
+            width: 1480px;
+            height: 510px;
+            overflow: scroll;
+        }
+
+        input {
+            position: relative;
+            bottom: 700px;
+            width: 500px;
+            padding: 8px 16px;
+            left: 500px;
+            background-color: aquamarine;
+        }
+
+        label {
+            position: relative;
+            bottom: 700px;
+            text-align: center;
+            left: 500px;
+
+        }
+
+        h4 {
+            position: relative;
+            bottom: 700px;
+            left: 800px;
+            width: 200px;
+            padding: 5px;
+            background-color: aquamarine;
+        }
+
+
+
+        button {
+            position: relative;
+            bottom: 600px;
+            left: 800px;
+            width: 100px;
+            padding: 5px;
+            background-color: aqua;
+        }
+
+        .map {
+            position: relative;
+            bottom: 400px;
+        }
+
+        #location {
+            position: relative;
+            top: 10px;
+            bottom: 40px;
+            width: 90px;
+            padding: 2px;
+            right: 90px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <ul>
+        <li><a class="active" href="#home"></a></li>
+        <li><a href="#about"> jump to ABOUT</a></li>
+        <li><a href="#FOOD"> jump to FOOD</a></li>
+        <li><a href="#vegbiryani"> jump to VEG BIRYANI</a></li>
+        <li><a href="#non-veg biryani"> jump to NON-VEG BIRYANI</a></li>
+        <li><a href="#soups"> jump to SOUPS</a></li>
+        <li><a href="#milkshakes">jump to SHAKES</a></li>
+        <li><a href="#booking">jump to BOOKING</a></li>
+        <li><a href="#location">jump to LOCATION</a></li>
+    </ul>
+    <h2>HEAVENLY DELIGHTS</h2>
+    <p id="ABOUT"> ABOUT:Heavenly delights is an eatery that offers fast and fresh dishes that are perfect for dining in
+        or
+        enjoying in
+        the comfort of your home.<br> We know your time is valuable, and we're proud to offer the foods you love at a
+        speed that suits your face-paced lifestyle.</p>
+    <div class="grid">
+        <div class="ex1">
+            <h3 id="food">FOOD</h3>
+            <img src="../idli-recipe-1.webp" width="200" height="200">
+            <IMG src="../Dosa-recipe-plain-sada-dosa-Piping-Pot-Curry.jpg" width="200" height="200">
+            <img src="../tomato-upma-recipe-500x500.jpg" width="200" height="200">
+            <img src="../khichdi-recipe-1.webp" width="200" height="200">
+            <img src="../breakfast-recipes-fb.jpg" width="200" height="200">
+            <img src="../Mysore-Bonda-Recipe.jpg" width="200" height="200">
+            <img src="../download.jpg" width="200" height="200">
+            <div>
+                <h3 id="vegbiryanis"> VEG BIRYANIS</h3>
+                <IMG src="../Vegetable-Dum-Biryani-recipe.jpg" width="200" height="200">
+                <IMG src="../Veg-Biryani-in-Pressure-Cooker-6.jpg" width="200" height="200">
+                <IMG src="../SRG_-CKK-Shoot-18_226-scaled.jpg" width="200" height="200">
+                <IMG src="../D4giy90UcAAj31k.jpg" width="200" height="200">
+                <img src="../IMG_0267.webp" width="200" height="200">
+                <IMG src="../maxresdefault.jpg" width="200" height="200">
+                <IMG src="../Vegetable-Bagara-Rice.jpg" width="200" height="200">
+                <div>
+                    <h3 id="non-veg biryani">NON-VEG BIRYANIS</h3>
+                    <img src="../chicken-65-biryani-recipe.jpeg" width="200" height="200">
+                    <IMG src="../chicken-biryani-006-500x500.jpg" width="200" height="200">
+                    <img src="../chicken-hyderabadi-biryani-01.jpg" width="200" height="200">
+                    <IMG src="../SES-chicken-biryani-recipe-7367850-hero-A-ed211926bb0e4ca1be510695c15ce111.jpg"
+                        width="200" height="200">
+                    <img src="../Best-Mutton-Biryani-Recipe-500x500.jpg" width="200" height="200">
+                    <img src="../mutton-biryani-served-in-a-bowl-indian-style-H94R1X.jpg" width="200" height="200">
+                    <img src="../Egg-Biryani-Featured-1.jpg" width="200" height="200">
+                    <div>
+                        <h3 id="soups">SOUPS</h3>
+                        <img src="../vegetable-soup.jpg" width="200" height="200">
+                        <img src="../Slow-Cooker-Vegetable-Soup-2-scaled.webp" width="200" height="200">
+                        <img src="../MPRoCuWVLuJYs_SweetCornVegSoup.jpg" width="200" height="200">
+                        <img src="../easy-and-hearty-vegetable-soup-99538-hero-01-1d3b936ff03144af95ddca7640259c11.jpg"
+                            width="200" height="200">
+                        <img src="../b2ba25b10b6eaa76595d04daa9af46aa.png" width="200" height="200">
+                        <img src="../1517213507.jpg" width="200" height="200">
+                        <img src="../tomato-soup-recipe.jpg" width="200" height="200">
+                        <div>
+                            <h3 id="milkshakes">MILKSHAKES</h3>
+                            <IMG src="../download (1).jpg" width="200" height="200">
+                            <IMG src="../Peanut-Butter-Milkshake-4-of-4.jpg" width="200" height="200">
+                            <IMG src="../Oreo-Milkshake.webp" width="200" height="200">
+                            <IMG src="../harvey-milkshake.webp" width="200" height="200">
+                            <IMG src="../Chocolate-Milkshake-5-500x500.jpg" width="200" height="200">
+                            <img src="../Strawberry-Milkshake-2.1200px-1-of-1.jpg" width="200" height="200">
+                            <img src="../image.webp" width="200" height="200"><br>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div>
+        <form>
+            <table>
+                <h4 id="booking">TABLE BOOKING FORM</h4>
+
+                <tr>
+                    <td><label for="firstname">FIRSTNAME</label></td>
+                    <td><input type="text" id="FIRSTNAME" placeholder="enter your first name"><BR></td>
+                </tr>
+                <tr>
+                    <td><label for="lastname">last NAME</label></td>
+                    <td><input type="text" placeholder="enter your last name"><br></td>
+                </tr>
+                <tr>
+                    <td><label for="email">E-MAIL</label></td>
+                    <td><input type="text" placeholder="enter your mail-id"><br></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">PHONE NUMBER</label></td>
+                    <td><input type="tel" placeholder="enter your phone number"><br></td>
+                </tr>
+                <tr>
+                    <td><label for="reservation date">RESEVATION DATE</label></td>
+                    <td><input type="number" placeholder="enter your date"><br></td>
+                </tr>
+                <tr>
+                    <td><label for="RESEVATION TIME">RESEVATION time</label></td>
+                    <td><input type="number" placeholder="enter your time"><br></td>
+                </tr>
+                <tr>
+                    <td><label for="PERSONS">How many persons you will be with?</label></td>
+                    <td><input type="text" placeholder="enter no.of persons"><br></td>
+                </tr>
+                <tr>
+                    <td> <label for="notes">NOTES</label></td>
+                    <td><input type="text" placeholder="enter your feedback"><br></td>
+                </tr>
+
+
+            </table>
+        </form>
+        <a href="./feedback.html"><button>SUBMIT</button></a>
+
+    </div>
+    <div class="map">
+        <h4 id="location">LOCATION</h4>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.2650471472944!2d78.39757587508541!3d17.49485668341078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9105a9b7d013%3A0xf2bcc2edff8ea8b0!2sKPHB%20Colony%20Bus%20Stop!5e0!3m2!1sen!2sin!4v1690268610034!5m2!1sen!2sin"
+            width="1500" height="250"></iframe>
+    </div>
+
+
+</body>
+
+</html>
