@@ -7,16 +7,27 @@
 </head>
 <body>
     <script>
-        function Ascendingorder(strings) {
-    return strings.sort((a, b) => a.length - b.length);
-}
-
-const inputArray = ["apple", "banana", "cherry", "grapes","guava"];
-const sortedArray = Ascendingorder(inputArray);
-
-
-console.log("Sorted Array:",sortedArray);
+        function Ascendingorder(strings){
+            for(i=0;i<strings.length;i++){
+                for(j=i+1;j<strings.length;j++){
+                    if(strings[i]>strings[j]){
+                        c=strings[i];
+                        strings[i]=strings[j];
+                        strings[j]=c;
+                    }
+                }
+            }
+            return strings;
+           
+        }
+        const a = ["a", "ccc", "dddd", "bb"];
+        console.log(Ascendingorder(a));
+        
 
     </script>
+
+
+
+
 </body>
 </html>
