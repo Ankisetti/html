@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function secondLargest(arr){
+            for(i=0;i<arr.length;i++){
+                for(j=i+1;j<arr.length;j++){
+                    if(arr[i]>arr[j]){
+                        c=arr[i];
+                        arr[i]=arr[j];
+                        arr[j]=c;
+                        
+                        }
+                     }
+                }
+                return arr[arr.length-2];
+            
+                 }
+            
+        
+        const a=[10,40,30,20,50];
+        console.log(secondLargest(a));
+        console.log(secondLargest());
+
+        
+   
+           
+    
+
+
+
+    </script>
+</body>
+</html>
