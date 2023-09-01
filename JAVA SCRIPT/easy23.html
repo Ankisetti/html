@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Ascendingorder(numbers){
+            for(i = 0;i<numbers.length;i++){
+                for(j = i+1;j<numbers.length;j++){
+                    if(numbers[i]>numbers[j]){
+                        c=numbers[i];
+                        numbers[i]=numbers[j];
+                        numbers[j]=c;
+                    }
+                }
+            }
+            return numbers;
+        }
+        const a=[2,3,1,5,4];
+        console.log(Ascendingorder(a));
+    </script>
+</body>
+</html>
