@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,60 +14,70 @@
             align-items: center;
             min-height: 100vh;
         }
-        table, th, td {
+
+        table,
+        th,
+        td {
             text-align: center;
             margin-left: 600px;
-             }
-             button{
-                position: relative;
-                top: 300px;
-             }
+        }
+
+        button {
+            position: relative;
+            top: 300px;
+        }
     </style>
 </head>
+
 <body>
     <h2>REGISTRATION FORM</h2>
-    <form>
+    <form id="form">
         <table>
-         <tr>
-            <td><label for="firstname">First name</label></td>
-            <td><input type="text" id="username" name="username" required></td>
-         </tr>
-         <tr>
-            <td><label for="lastname">Last name</label></td>
-            <td><input type="text" id="lastname" name="username" required></td>
-         </tr>
-         <tr>
-            <td><label for="Email">Email</label></td>
-            <td><input type="email" id="Email" name="email" required></td>
-         </tr>
-         <tr>
-            <td><label for="Password">Password</label></td>
-            <td><input type="password" id="password" name="password" required></td>
-         </tr>
-         <tr>
-            <td><label for="Confirm Password">Confirm Password</label></td>
-            <td><input type="password" id="confirm_password" name="password" required></td>
-         </tr>
-         </table>
-        <input type="button" value="submit" onclick="validatecredentials()">
+            <tr>
+                <td><label for="firstname">First name</label></td>
+                <td><input type="text" id="username" name="firstname" required></td>
+            </tr>
+            <tr>
+                <td><label for="lastname">Last name</label></td>
+                <td><input type="text" id="lastname" name="lastname" required></td>
+            </tr>
+            <tr>
+                <td><label for="Email">Email</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="Password">Password</label></td>
+                <td><input type="password" id="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td><label for="Confirm Password">Confirm Password</label></td>
+                <td><input type="password" id="confirm_password" name="confirm_password" required></td>
+            </tr>
+        </table>
+        <input type="submit" value="Submit">
     </form>
     <script>
-        function validatecredentials(){
+        function validateCredentials(event) {
+            event.preventDefault();
+
             var firstname = document.getElementById('username').value;
             var lastname = document.getElementById('lastname').value;
-            var Email = document.getElementById('email').value;
+            var email = document.getElementById('email').value;
             var password = document.getElementById('password').value;
-            var Confirm_Password = document.getElementById('confirm password').value;
+            var confirm_password = document.getElementById('confirm_password').value;
 
-            if(firstname === "Ankisetti" &&  lastname === "Supraja" && password === "Suppi@123"){
-                alert("login succesfull redirect to login page");
-                window.location.href = "login1.html";
-            }else{
-                alert("invalid credentials please enter correct credentials")
+            if (firstname === "Ankisetti" && lastname === "Supraja" && password === "Suppi@123" && password === confirm_password) {
+                alert("Registration successful. Redirecting to login page...");
+                window.open('./form.html');
+            } else {
+                alert("Invalid credentials or password mismatch. Please enter correct information.");
+                document.getElementById('form').style.display='none'
             }
-        
         }
-        
+
+        let form = document.getElementById("form");
+        form.addEventListener('submit', validateCredentials);
     </script>
 </body>
+
 </html>
